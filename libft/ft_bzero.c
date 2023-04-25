@@ -6,7 +6,7 @@
 /*   By: aamoros- <aamoros-@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 15:48:49 by aamoros-          #+#    #+#             */
-/*   Updated: 2023/04/20 12:25:16 by aamoros-         ###   ########.fr       */
+/*   Updated: 2023/04/25 17:06:39 by aamoros-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-// int	main(void)
-// {
-// 	unsigned char s[] = "Jennifer";
-// 	size_t n = 0;
-// 	bzero(s, n);
-//  printf("%s", s);
-//     ft_bzero(s, n);
-//     printf("%s", s);
-// }
+/* int	main(void)
+{
+	unsigned char s[] = "Jennifer";
+	size_t n = 0;
+	bzero(s, n);
+ printf("%s", s);
+    ft_bzero(s, n);
+    printf("%s", s);
+} */

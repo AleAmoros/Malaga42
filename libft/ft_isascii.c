@@ -6,7 +6,7 @@
 /*   By: aamoros- <aamoros-@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 15:22:58 by aamoros-          #+#    #+#             */
-/*   Updated: 2023/04/18 15:28:04 by aamoros-         ###   ########.fr       */
+/*   Updated: 2023/04/25 17:05:24 by aamoros-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_isascii(int c)
 	return (1);
 }
 
-int main(void)
+/* int main(void)
 {
     printf("%i\n", ft_isascii(152));
-}
+} */
