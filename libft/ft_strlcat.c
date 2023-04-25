@@ -6,14 +6,22 @@
 /*   By: aamoros- <aamoros-@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/23 19:34:13 by aamoros-          #+#    #+#             */
-/*   Updated: 2023/04/24 18:02:25 by aamoros-         ###   ########.fr       */
+/*   Updated: 2023/04/25 17:08:33 by aamoros-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-size_t	ft_strlen(const char *s);
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
@@ -48,13 +56,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	printf("%zu", ft_strlcat(str, str2, n));
 } */
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
