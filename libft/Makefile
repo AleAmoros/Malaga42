@@ -1,7 +1,6 @@
 NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-LIB = ar rcs
 SRC := ft_isalpha.c\
 ft_isdigit.c\
 ft_isalnum.c\
@@ -20,13 +19,9 @@ ft_memcmp.c\
 ft_memcpy.c\
 ft_memmove.c\
 ft_strlcpy.c\
-ft_strlcat.c\
-ft_strnstr.c\
-ft_atoi.c\
-ft_calloc.c\
-ft_strdup.c
+ft_strlcat.c
 
-OBJS = $(SOURCES:.c=-.o)
+OBJS := $(SRC:%.c=%.o)
 
 
 
@@ -35,11 +30,14 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
+$(OBJS): $(SRC)
+	$(CC) $(CFLAGS) -c $(SRC)
+
 clean:
 	rm -f $(OBJS)
 
-fclean:
-	rm - f $(NAME)
+fclean: clean
+	rm -f $(NAME) 
 
 re: fclean all
 
